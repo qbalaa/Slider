@@ -1,0 +1,27 @@
+<html lang="en">
+    <title>Slider</title>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+        <label for="rangeInput">
+            Twoje umiejętności
+        </label>
+        <output
+        id = "amount"
+        name = "amount"
+        for = "rangeInput">0</output>
+        <input
+        type="range"
+        id="rangeInput"
+        name="rangeInput"
+        min="0"
+        max="100"
+        value="0"
+        oninput="amount.value=rangeInput.value+'/100'"/>
+        </div>
+    </body>
+</html>
